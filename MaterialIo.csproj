@@ -8,7 +8,107 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Remove="Assets\Icons\add_circle.png" />
+    <None Remove="Assets\Icons\arrow_back.png" />
+    <None Remove="Assets\Icons\arrow_right.png" />
+    <None Remove="Assets\Icons\block.png" />
+    <None Remove="Assets\Icons\browse_activity.png" />
+    <None Remove="Assets\Icons\cancel.png" />
+    <None Remove="Assets\Icons\check_circle.png" />
+    <None Remove="Assets\Icons\close.png" />
+    <None Remove="Assets\Icons\data_alert.png" />
+    <None Remove="Assets\Icons\data_check.png" />
+    <None Remove="Assets\Icons\data_info_alert.png" />
+    <None Remove="Assets\Icons\delete.png" />
+    <None Remove="Assets\Icons\done.png" />
+    <None Remove="Assets\Icons\download.png" />
+    <None Remove="Assets\Icons\eject.png" />
+    <None Remove="Assets\Icons\expand.png" />
+    <None Remove="Assets\Icons\expand_more.png" />
+    <None Remove="Assets\Icons\file_download_done.png" />
+    <None Remove="Assets\Icons\file_open.png" />
+    <None Remove="Assets\Icons\home.png" />
+    <None Remove="Assets\Icons\input.png" />
+    <None Remove="Assets\Icons\input_inverted.png" />
+    <None Remove="Assets\Icons\login.png" />
+    <None Remove="Assets\Icons\logout.png" />
+    <None Remove="Assets\Icons\mark_chat_read.png" />
+    <None Remove="Assets\Icons\mark_chat_read_filled.png" />
+    <None Remove="Assets\Icons\mark_chat_unread.png" />
+    <None Remove="Assets\Icons\mark_chat_unread_filled.png" />
+    <None Remove="Assets\Icons\mark_unread_chat_alt.png" />
+    <None Remove="Assets\Icons\mark_unread_chat_alt_filled.png" />
+    <None Remove="Assets\Icons\maximize.png" />
+    <None Remove="Assets\Icons\menu.png" />
+    <None Remove="Assets\Icons\menu_open.png" />
+    <None Remove="Assets\Icons\minimize.png" />
+    <None Remove="Assets\Icons\open_in_new.png" />
+    <None Remove="Assets\Icons\password.png" />
+    <None Remove="Assets\Icons\quick_reference.png" />
+    <None Remove="Assets\Icons\quick_reference_all.png" />
+    <None Remove="Assets\Icons\search.png" />
+    <None Remove="Assets\Icons\select_all.png" />
+    <None Remove="Assets\Icons\settings.png" />
+    <None Remove="Assets\Icons\side_navigation.png" />
+    <None Remove="Assets\Icons\start.png" />
+    <None Remove="Assets\Icons\sync.png" />
+    <None Remove="Assets\Icons\sync_inverse.png" />
+    <None Remove="Assets\Icons\terminal.png" />
+    <None Remove="Assets\Icons\upload.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.77" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Icons\add_circle.png" />
+    <Resource Include="Assets\Icons\arrow_back.png" />
+    <Resource Include="Assets\Icons\arrow_right.png" />
+    <Resource Include="Assets\Icons\block.png" />
+    <Resource Include="Assets\Icons\browse_activity.png" />
+    <Resource Include="Assets\Icons\cancel.png" />
+    <Resource Include="Assets\Icons\check_circle.png" />
+    <Resource Include="Assets\Icons\close.png" />
+    <Resource Include="Assets\Icons\data_alert.png" />
+    <Resource Include="Assets\Icons\data_check.png" />
+    <Resource Include="Assets\Icons\data_info_alert.png" />
+    <Resource Include="Assets\Icons\delete.png" />
+    <Resource Include="Assets\Icons\done.png" />
+    <Resource Include="Assets\Icons\download.png" />
+    <Resource Include="Assets\Icons\eject.png" />
+    <Resource Include="Assets\Icons\expand.png" />
+    <Resource Include="Assets\Icons\expand_more.png" />
+    <Resource Include="Assets\Icons\file_download_done.png" />
+    <Resource Include="Assets\Icons\file_open.png" />
+    <Resource Include="Assets\Icons\home.png" />
+    <Resource Include="Assets\Icons\input.png" />
+    <Resource Include="Assets\Icons\input_inverted.png" />
+    <Resource Include="Assets\Icons\login.png" />
+    <Resource Include="Assets\Icons\logout.png" />
+    <Resource Include="Assets\Icons\mark_chat_read.png" />
+    <Resource Include="Assets\Icons\mark_chat_read_filled.png" />
+    <Resource Include="Assets\Icons\mark_chat_unread.png" />
+    <Resource Include="Assets\Icons\mark_chat_unread_filled.png" />
+    <Resource Include="Assets\Icons\mark_unread_chat_alt.png" />
+    <Resource Include="Assets\Icons\mark_unread_chat_alt_filled.png" />
+    <Resource Include="Assets\Icons\maximize.png" />
+    <Resource Include="Assets\Icons\menu.png" />
+    <Resource Include="Assets\Icons\menu_open.png" />
+    <Resource Include="Assets\Icons\minimize.png" />
+    <Resource Include="Assets\Icons\open_in_new.png" />
+    <Resource Include="Assets\Icons\password.png" />
+    <Resource Include="Assets\Icons\quick_reference.png" />
+    <Resource Include="Assets\Icons\quick_reference_all.png" />
+    <Resource Include="Assets\Icons\search.png" />
+    <Resource Include="Assets\Icons\select_all.png" />
+    <Resource Include="Assets\Icons\settings.png" />
+    <Resource Include="Assets\Icons\side_navigation.png" />
+    <Resource Include="Assets\Icons\start.png" />
+    <Resource Include="Assets\Icons\sync.png" />
+    <Resource Include="Assets\Icons\sync_inverse.png" />
+    <Resource Include="Assets\Icons\terminal.png" />
+    <Resource Include="Assets\Icons\upload.png" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,100 @@
+﻿<UserControl x:Class="DariuszLabaj.MaterialIo.UserControll.SearchBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:converters="clr-namespace:DariuszLabaj.MaterialIo.Converters"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:local="clr-namespace:DariuszLabaj.MaterialIo.UserControll"
+             mc:Ignorable="d" 
+             >
+    <Border>
+    <TextBox>
+        <TextBox.Style>
+            <Style TargetType="TextBox">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="TextBox">
+                            <Border CornerRadius="{Binding Path=ActualHeight, RelativeSource={RelativeSource Self}, Converter={converters:ScaleConverter 0.5}}" Background="#F0F0F0" BorderThickness="2"
+                            Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="0" Source="pack://application:,,,/MaterialIo;component/Assets/Icons/search.png" Stretch="None" Margin="8 8">
+                                        <Image.Style>
+                                            <Style TargetType="Image">
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Text, ElementName=SearchBox}" Value="">
+                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                                <Setter Property="Visibility" Value="Hidden"/>
+                                            </Style>
+                                        </Image.Style>
+                                    </Image>
+                                    <TextBox Margin="0 4 0 4"
+                                     Grid.Column="1"
+                                     Text="{Binding Text, RelativeSource={RelativeSource TemplatedParent}, UpdateSourceTrigger=PropertyChanged}"
+                                     BorderThickness="0" Background="Transparent"
+                                     VerticalContentAlignment="Center"
+                                     Foreground="#303030"
+                                     FontSize="{TemplateBinding FontSize}"
+                                     FontFamily="{TemplateBinding FontFamily}"
+                                     FontWeight="{TemplateBinding FontWeight}"
+                                     FontStretch="{TemplateBinding FontStretch}"
+                                     FontStyle="{TemplateBinding FontStyle}"
+                                     x:Name="SearchBox"/>
+                                    <TextBlock IsHitTestVisible="False"
+                                       Text="S E A R C H"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       Margin="0 4"
+                                       Foreground="#909090"
+                                       FontSize="{TemplateBinding FontSize}"
+                                       FontFamily="{TemplateBinding FontFamily}"
+                                       FontWeight="{TemplateBinding FontWeight}"
+                                       FontStretch="{TemplateBinding FontStretch}"
+                                       FontStyle="{TemplateBinding FontStyle}"
+                                       Grid.Column="1">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Text, ElementName=SearchBox}" Value="">
+                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                                <Setter Property="Visibility" Value="Hidden"/>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <Button Grid.Column="2" x:Name="button">
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="Click" SourceObject="{Binding ElementName=button}">
+                                                <i:ChangePropertyAction TargetObject="{Binding ElementName=SearchBox}" PropertyName="Text" Value=""/>
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>
+                                           <Image Source="pack://application:,,,/MaterialIo;component/Assets/Icons/close.png" Stretch="None" Margin="8 8"/>
+                                        <Button.Style>
+                                            <Style TargetType="Button" BasedOn="{StaticResource TextButton}">
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Text, ElementName=SearchBox}" Value="">
+                                                        <Setter Property="Visibility" Value="Hidden"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </Style>
+                                        </Button.Style>
+                                    </Button>
+                                </Grid>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </TextBox.Style>
+    </TextBox>
+    </Border>
+</UserControl>
