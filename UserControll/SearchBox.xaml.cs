@@ -18,11 +18,28 @@ namespace DariuszLabaj.MaterialIo.UserControll
     /// <summary>
     /// Interaction logic for SearchBox.xaml
     /// </summary>
+    /// 
     public partial class SearchBox : UserControl
     {
+        public static readonly DependencyProperty TextProperty = DependencyProperty.Register("Text", typeof(string), typeof(SearchBox), new PropertyMetadata(string.Empty));
+        public static readonly DependencyProperty SearchPromptProperty = DependencyProperty.Register("SearchPrompt", typeof(string), typeof(SearchBox), new PropertyMetadata("Search"));
+
+        public string Text
+        {
+            get { return (string)GetValue(TextProperty); }
+            set { SetValue(TextProperty, value); }
+        }
+
+        public string SearchPrompt
+        {
+            get { return (string)GetValue(SearchPromptProperty); }
+            set { SetValue(SearchPromptProperty, value); }
+        }
+
         public SearchBox()
         {
             InitializeComponent();
         }
+
     }
 }

@@ -37,7 +37,7 @@
                                     </Image>
                                     <TextBox Margin="0 4 0 4"
                                      Grid.Column="1"
-                                     Text="{Binding Text, RelativeSource={RelativeSource TemplatedParent}, UpdateSourceTrigger=PropertyChanged}"
+                                     Text="{Binding Text, RelativeSource={RelativeSource AncestorType={x:Type local:SearchBox}}, UpdateSourceTrigger=PropertyChanged}"
                                      BorderThickness="0" Background="Transparent"
                                      VerticalContentAlignment="Center"
                                      Foreground="#303030"
@@ -48,7 +48,7 @@
                                      FontStyle="{TemplateBinding FontStyle}"
                                      x:Name="SearchBox"/>
                                     <TextBlock IsHitTestVisible="False"
-                                       Text="S E A R C H"
+                                       Text="{Binding SearchPrompt, RelativeSource={RelativeSource AncestorType={x:Type local:SearchBox}}}"
                                        VerticalAlignment="Center"
                                        HorizontalAlignment="Left"
                                        Margin="0 4"
